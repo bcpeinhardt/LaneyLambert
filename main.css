@@ -110,11 +110,13 @@ body {
   /* Small Screens */
   @media (max-width: 560px) {
     .showcase::after {
-      height: 50vh;
+      height: 100vh;
+      filter: blur(10px);
+      -webkit-filter: blur(10px);
     }
   
     .content {
-      top: 5%;
+      top: 20%;
       margin-top: 5px;
     }
   
@@ -123,9 +125,9 @@ body {
       width: 140px;
     }
   
-    .content .text {
+    /* .content .text {
       display: none;
-    }
+    } */
   
     .grid-3,
     .grid-2 {
